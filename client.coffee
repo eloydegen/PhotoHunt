@@ -145,7 +145,7 @@ exports.render = !->
 					Dom.div !->
 						Dom.style Flex: 1, fontSize: '120%'
 						if showAsNewest
-							Dom.text tr "Take a photo of you.."
+							Dom.text tr "Take a selfie of you.."
 							Dom.div !->
 								Dom.style fontSize: '120%', fontWeight: 'bold', color: (if Event.isNew(hunt.get('time')) then '#5b0' else Colors.highlight)
 								Dom.text hunt.get('subject')
